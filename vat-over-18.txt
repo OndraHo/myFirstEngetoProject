@@ -1,0 +1,23 @@
+Austria (AT): 20 %
+Belgium (BE): 21 %
+Bulgaria (BG): 20 %
+Cyprus (CY): 19 %
+Czech Republic (CZ): 21 %
+Denmark (DK): 25 %
+Germany (DE): 19 %
+Estonia (EE): 20 %
+Greece (GR): 24 %
+Spain (ES): 21 %
+Finland (FI): 24 %
+France (FR): 20 %
+Italy (IT): 22 %
+Latvia (LV): 21 %
+Lithuania (LT): 21 %
+Hungary (HU): 27 %
+Netherlands (NL): 21 %
+Poland (PL): 23 %
+Portugal (PT): 23 %
+Romania (RO): 20 %
+Slovakia (SK): 20 %
+Sweden (SE): 25 %
+United Kingdom (GB): 20 %
