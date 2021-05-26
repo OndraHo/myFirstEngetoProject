@@ -1,8 +1,5 @@
 package main.java;
 
-import java.rmi.ServerError;
-import java.sql.SQLOutput;
-
 /**
  * @author ondrej.hosek
  */
@@ -66,15 +63,13 @@ public class Country {
 	public String printInfo() {
 		if (getName() != null && getAbbreviation() != null) {
 			return (getName() + " (" + getAbbreviation() + "): " + getFullVat() + " %");
-		}
-		else{
+		} else {
 			return "Can`t return info about country";
 		}
 	}
 
-
-	public static Country parseText(String record) {
-		String[] items = record.split(DELIMITER);
+	public static Country parseText(String input) {
+		String[] items = input.split(DELIMITER);
 		try {
 			String abbreviation = items[0];
 			String name = items[1];
@@ -82,14 +77,13 @@ public class Country {
 			double lowVat = Integer.parseInt(items[3]);
 			boolean useSpecialRate = Boolean.parseBoolean(items[4]);
 
-//			System.out.println(name);
 			return new Country(abbreviation, name, fullVat, lowVat, useSpecialRate);
 		} catch (Exception e) {
-			System.err.println("Can`t parse record " + record);
+			System.err.println("Can`t parse input " + input);
 			System.err.println(e);
 		}
-
 		return null;
 	}
+
 }
 
